@@ -9,6 +9,7 @@
     "build": "astro check && astro build",
     "preview": "astro preview",
     "astro": "astro",
+    "playwright": "playwright",
     "fmt": "prettier --write .",
     "fmt.check": "prettier --check ."
   },
@@ -21,6 +22,8 @@
     "@commitlint/cli": "^19.4.0",
     "@commitlint/config-conventional": "^19.2.2",
     "@commitlint/types": "^19.0.3",
+    "@playwright/test": "^1.46.1",
+    "@types/node": "^22.4.1",
     "commitizen": "^4.3.0",
     "cz-conventional-changelog": "^3.3.0",
     "husky": "^9.1.4",

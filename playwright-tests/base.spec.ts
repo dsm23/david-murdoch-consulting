@@ -3,7 +3,7 @@ import { test, expect } from "@playwright/test";
 test("has title", async ({ page }) => {
   await page.goto("/");
 
-  await expect(page).toHaveTitle("Astro");
+  await expect(page).toHaveTitle("David Murdoch Consulting");
 });
 
 test("has heading", async ({ page }) => {
@@ -11,7 +11,7 @@ test("has heading", async ({ page }) => {
 
   await expect(
     page.getByRole("heading", {
-      name: "Astro",
+      name: "David Murdoch Consulting",
     }),
   ).toBeVisible();
 });

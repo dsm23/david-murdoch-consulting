@@ -19,6 +19,7 @@
     "@astrojs/tailwind": "^5.1.0",
     "@fontsource-variable/inter": "^5.0.20",
     "@fontsource-variable/lexend": "^5.0.21",
+    "@headlessui/react": "^2.1.2",
     "astro": "^4.14.2",
     "clsx": "^2.1.1",
     "react": "^18.3.1",

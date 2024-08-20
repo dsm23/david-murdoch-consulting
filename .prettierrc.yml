@@ -2,15 +2,15 @@ vueIndentScriptAndStyle: true
 plugins:
   - prettier-plugin-astro
   - prettier-plugin-css-order
-  # - prettier-plugin-tailwindcss
+  - prettier-plugin-tailwindcss
 cssDeclarationSorterOrder: smacss
 overrides:
   - files: "*.astro"
     options:
       parser: astro
-# tailwindConfig: ./tailwind.config
-# tailwindFunctions:
-#   - clsx
-#   - cn
-#   - cva
-#   - cx
+tailwindConfig: ./tailwind.config
+tailwindFunctions:
+  - clsx
+  - cn
+  - cva
+  - cx

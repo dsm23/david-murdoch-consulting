@@ -1,21 +1,10 @@
 ---
-
+import Container from "~/components/container.astro";
+import Layout from "~/layout/index.astro";
 ---
 
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <meta name="viewport" content="width=device-width" />
-    <meta name="generator" content={Astro.generator} />
-    <meta
-      name="description"
-      content="David Murdoch Consulting provides expert website development and hosting for business-to-business services. With years of experience, I offer tailored solutions to help businesses develop dashboards and client facing webapps. Discover how my expertise can make your business more efficient today."
-    />
-    <title>David Murdoch Consulting</title>
-  </head>
-
-  <body>
+<Layout title="David Murdoch Consulting">
+  <Container>
     <h1>David Murdoch Consulting</h1>
-  </body>
-</html>
+  </Container>
+</Layout>

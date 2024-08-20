@@ -1,6 +1,8 @@
 ---
 import "@fontsource-variable/inter";
 import "@fontsource-variable/lexend";
+import Container from "~/components/container.astro";
+import NavBar from "~/components/navbar";
 
 type Props = {
   title: string;
@@ -23,6 +25,11 @@ const { title } = Astro.props;
   </head>
 
   <body class="antialiased">
+    <header class="py-10">
+      <Container>
+        <NavBar client:load />
+      </Container>
+    </header>
     <slot />
   </body>
 </html>

@@ -1,4 +1,5 @@
 import type { Config } from "tailwindcss";
+import defaultTheme from "tailwindcss/defaultTheme";
 import formsPlugin from "@tailwindcss/forms";
 import headlessuiPlugin from "@headlessui/tailwindcss";
 import typography from "@tailwindcss/typography";
@@ -27,8 +28,8 @@ const config = {
         "4xl": "2rem",
       },
       fontFamily: {
-        sans: "var(--font-inter)",
-        display: "var(--font-lexend)",
+        sans: ['"Inter Variable"', ...defaultTheme.fontFamily.sans],
+        display: ['"Lexend Variable"'],
       },
       maxWidth: {
         "2xl": "40rem",

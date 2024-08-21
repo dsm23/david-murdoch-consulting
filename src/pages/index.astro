@@ -1,18 +1,24 @@
 ---
+import About from "~/components/about.astro";
 import Container from "~/components/container.astro";
 import Hero from "~/components/hero.astro";
 import Layout from "~/layout/index.astro";
+import SeparatorBottom from "~/components/separator-bottom.astro";
+import SeparatorTop from "~/components/separator-top.astro";
 ---
 
 <Layout title="David Murdoch Consulting">
-  <Container>
-    <main>
+  <main>
+    <Container>
       <h1
         class="mx-auto max-w-4xl font-display text-5xl font-medium tracking-tight text-blue-600 sm:text-7xl"
       >
         David Murdoch Consulting
       </h1>
-      <Hero />
-    </main>
-  </Container>
+    </Container>
+    <Hero />
+    <SeparatorTop class="text-white" aria-hidden="true" />
+    <SeparatorBottom class="text-blue-600" aria-hidden="true" />
+    <About />
+  </main>
 </Layout>

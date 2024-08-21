@@ -1,0 +1,19 @@
+---
+import ContactForm from "./contact-form";
+import Container from "./container.astro";
+---
+
+<section
+  id="contact"
+  class="-mt-px min-h-dvh justify-center pb-28 pt-20 sm:py-32"
+>
+  <Container>
+    <div
+      class="prose max-w-2xl dark:prose-invert lg:prose-2xl md:mx-auto xl:max-w-none"
+    >
+      <h2 class="text-center font-display">Contact</h2>
+
+      <ContactForm client:idle />
+    </div>
+  </Container>
+</section>
